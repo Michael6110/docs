@@ -1,0 +1,64 @@
+---
+title: "How to edit content in the Ghana Gas Site Brief"
+description: "Click any field in the Site Brief to edit it in your browser. Learn which fields are editable, which require an HTML change, and how keyboard shortcuts work."
+sidebarTitle: "Editing Content"
+---
+
+The Ghana Gas Site Brief is designed for direct in-browser editing. You can click almost any piece of text and start typing — just like editing a document. No plugins, no login, and no separate editing interface are required.
+
+## What you can edit
+
+The following fields accept direct in-browser edits:
+
+- **Issue number and date** — the issue label (e.g., `ISSUE 001`) and report date in the masthead, top right
+- **Report period label** — the badge next to the main title (e.g., `MONTHLY`)
+- **Project cards** — project names, status labels, and completion percentages via the **+** and **−** buttons
+- **Gas flow table** — gas stream names, flow rate values, units, remarks, and recorded dates
+- **Department cards** — all card names, status badges, update body text, and metadata values (lead officer, dates, reference numbers)
+
+## What you cannot edit through the UI
+
+Some elements require editing the HTML source directly and cannot be changed through the browser interface:
+
+- **Gas flow status indicators** — the Normal / Monitor / Alert dot and label for each gas stream row are fixed at load time and require an HTML edit to change
+- **The number of project cards or department cards** — adding or removing cards requires editing the HTML source; the UI does not provide controls for this
+- **Section headings and section numbers** — the numbered section titles (e.g., `01 Project Progress Dashboard`) are fixed in the HTML markup
+
+## How to edit
+
+<Steps>
+  <Step title="Click any editable field">
+    Move your cursor over any text field. A subtle golden highlight appears on hover to indicate the field accepts input.
+  </Step>
+  <Step title="Activate the field">
+    Click the highlighted field. A text cursor appears inside it, indicating the field is active and ready for input.
+  </Step>
+  <Step title="Type your content">
+    Type or paste your new content. Standard text editing behaviour applies — you can select all, copy, paste, and undo within the field.
+  </Step>
+  <Step title="Confirm and move on">
+    Click outside the field or press **Tab** to move focus to the next editable field. Your change is retained in the page immediately.
+  </Step>
+</Steps>
+
+## Replacing placeholder text
+
+The pre-loaded brief contains `[placeholder]` text in many fields — for example, `[Name]`, `[Date]`, `[Contractor Name]`, `[KP Ref]`, and `[number]`. These placeholders mark information that must be filled in before the brief is distributed or exported.
+
+Replace all placeholders with accurate, period-specific information before exporting or printing the brief.
+
+<Warning>
+The brief does not validate or warn you about unfilled placeholders. Review all sections carefully before printing.
+</Warning>
+
+## Keyboard shortcuts
+
+| Key | Action |
+|---|---|
+| **Tab** | Move focus to the next editable field |
+| **Ctrl + A** | Select all text within the active field |
+| **Ctrl + C** | Copy selected text |
+| **Ctrl + V** | Paste text into the active field |
+| **Ctrl + Z** | Undo the last change within the active field |
+
+Standard browser text-editing shortcuts work within all editable fields. Note that **Ctrl + Z** only undoes changes made within the currently active field during the current browser session — it does not undo a save to local storage.

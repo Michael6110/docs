@@ -1,0 +1,48 @@
+{
+  "projectType": "frontend",
+  "projectName": "Ghana Gas Site Brief",
+  "projectDescription": "An interactive, browser-based monthly operational site brief for Ghana National Gas Company Limited, enabling teams to track project progress, gas flow rates, and department updates — then export to PDF.",
+  "theme": "aspen",
+  "primaryColor": "#e8a020",
+  "lightColor": null,
+  "darkColor": "#0b0f14",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": ["introduction", "getting-started"]
+      },
+      {
+        "group": "Sections",
+        "pages": [
+          "sections/project-dashboard",
+          "sections/gas-flow-register",
+          "sections/department-updates"
+        ]
+      },
+      {
+        "group": "Using the Brief",
+        "pages": [
+          "using/editing-content",
+          "using/saving-progress",
+          "using/print-export"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Interactive project progress dashboard with adjustable completion percentages",
+    "Gas flow rate register tracking multiple streams (MMscfd) with status indicators",
+    "Department update cards covering Community, Roads, Pipeline, Facilities, and Technical Services",
+    "In-browser editing — click any text field to update content directly",
+    "Local storage save/restore so edits persist across sessions",
+    "One-click print and PDF export for formal reporting"
+  ],
+  "publicApiSurface": [
+    "Project progress cards (name, status, completion %)",
+    "Gas flow rate table (stream name, flow rate, unit, status, remarks, date)",
+    "Department update cards (name, badge, update text, metadata fields)",
+    "Save Progress (localStorage persistence)",
+    "Print / Export PDF (window.print)"
+  ]
+}

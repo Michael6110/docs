@@ -1,0 +1,39 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Ghana Gas Site Brief",
+  "theme": "aspen",
+  "colors": {
+    "primary": "#e8a020",
+    "dark": "#0b0f14"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Michael6110/ghana-gas-brief"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": ["index", "introduction", "getting-started"]
+      },
+      {
+        "group": "Sections",
+        "pages": [
+          "sections/project-dashboard",
+          "sections/gas-flow-register",
+          "sections/department-updates"
+        ]
+      },
+      {
+        "group": "Using the Brief",
+        "pages": [
+          "using/editing-content",
+          "using/saving-progress",
+          "using/print-export"
+        ]
+      }
+    ]
+  }
+}

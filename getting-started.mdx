@@ -1,0 +1,65 @@
+---
+title: "Open, edit, and export your first Site Brief"
+description: "Open the Ghana Gas Site Brief in your browser, fill in your operational data, save your progress, and export a finished PDF — step by step."
+sidebarTitle: "Getting Started"
+---
+
+The Ghana Gas Site Brief is a single HTML file — `index.html` — that you open directly in a web browser. There is nothing to install, no account to create, and no internet connection required once you have the file. All editing, saving, and PDF export happens entirely within your browser.
+
+<Steps>
+  <Step title="Open the file">
+    Open `index.html` in Chrome, Edge, Firefox, or Safari. You can double-click the file in your file manager, or drag it into an open browser window.
+
+    The brief loads immediately with pre-filled sample data across all seven sections — projects, gas streams, and department update cards are all populated so you can see the layout before entering your own data.
+  </Step>
+  <Step title="Navigate the sections">
+    Use the navigation strip at the top of the page to jump directly to any section:
+
+    - **Projects** — Section 01, project progress dashboard
+    - **Gas Flow Rates** — Section 02, the flow rate register table
+    - **Community** — Section 03, community update cards
+    - **Roads** — Section 04, road works and maintenance cards
+    - **Pipeline** — Section 05, integrity and anomaly cards
+    - **Facilities** — Section 06, facilities and accommodation cards
+    - **Technical Services** — Section 07, engineering, HSE, and projects cards
+
+    Each link in the strip scrolls you directly to that section's anchor. You can also scroll manually from top to bottom.
+  </Step>
+  <Step title="Edit your content">
+    Click any text field, status badge, or numeric value in the brief to edit it directly. The field highlights subtly when active — just type to replace or extend the existing content.
+
+    **On project cards (Section 01):** Use the **+** and **−** buttons to adjust the completion percentage in 5-point increments. The progress bar colour updates automatically as the value changes — red below 30%, amber from 30–59%, teal from 60–99%, and green at 100%.
+
+    **In the gas flow table (Section 02):** Click any cell — stream name, flow rate value, unit, remarks, or recorded date — to edit it in place. The status dot (green / amber / red) is not directly toggled by clicking; to change a stream's status, you would edit the underlying data. To add a new gas stream row, click **Add Gas Stream** at the bottom of the table.
+
+    **On department cards (Sections 03–07):** Click the department name, the status badge, the narrative text body, or any metadata field (lead officer, dates, reference numbers) to edit each in place.
+  </Step>
+  <Step title="Save your work">
+    Click **Save Progress** in the sticky action bar at the bottom of the page. The button briefly confirms with a "Saved!" message.
+
+    Saving writes all project data, gas stream data, and the text content of every editable field to your browser's local storage. The next time you open `index.html` in the same browser on the same device, your saved data is automatically restored.
+  </Step>
+  <Step title="Export to PDF">
+    Click **Print / Export PDF** in the action bar to open your browser's print dialog.
+
+    In the print dialog, set the destination to **Save as PDF**. The brief applies print-specific styles automatically — the action bar and editing controls are hidden, the background switches to white, and edit highlights are removed — so the exported PDF is clean and document-ready.
+  </Step>
+</Steps>
+
+<Tip>
+  For the best PDF output, use Chrome or Edge and set margins to "None" or "Minimum" in the print dialog.
+</Tip>
+
+<Warning>
+  Local storage is tied to the browser and device. If you open the file in a different browser or clear your browser data, previously saved progress will not be available. Keep a PDF copy as your permanent record.
+</Warning>
+
+## What's pre-filled?
+
+When you open the brief for the first time — before saving any of your own data — the tool loads sample content that illustrates how each section is intended to be used.
+
+**10 infrastructure projects** are included in the Project Progress Dashboard, covering a representative cross-section of active capital works: Roads, Gas Village, Trauma Centre, Trauma Centre Civil Works, LPG Bottling Plant, Teachers Quarters, Gas Lodge, GPP Gym, Astroturf, and Esiama Market. Each carries an example completion percentage ranging from 20% to 80%, so you can see the full range of progress bar colours before entering your own figures.
+
+**10 gas streams** are included in the Gas Flow Rate Register, representing typical measurement points across a gas processing operation: the GPP inlet feed, Train 1 and Train 2 rich gas exports, the WAGP lean gas delivery point, the LPG splitter stream, site fuel gas consumption, the flare header, gas condensate recovery, the Takoradi custody transfer point, and the emergency bypass line. Each entry includes an example flow rate, unit, status indicator, remarks, and a recorded date.
+
+**Sample department updates** are pre-written for every card in Sections 03 through 07. These entries are editorial templates — they demonstrate the appropriate level of detail and the structure of a well-completed update, with placeholder fields (such as `[Name]`, `[Date]`, `[KP Ref]`) clearly marked for replacement with actual operational data.

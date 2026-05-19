@@ -1,0 +1,82 @@
+---
+title: "Ghana Gas Site Brief: overview and structure"
+description: "Learn what the Ghana Gas Site Brief is, who uses it, and how its seven operational sections are structured — from project tracking to department updates."
+---
+
+The Ghana Gas Site Brief is an interactive, browser-based reporting tool built for Technical Department staff at Ghana National Gas Company Limited. Each month, the Technical Department must produce a structured site report covering active infrastructure projects, gas flow rates, and updates from every operational department — from Community Liaison to HSE to Engineering. Without a dedicated tool, that process typically involves scattered documents, inconsistent formatting, and manual assembly.
+
+The Site Brief solves this by providing a single HTML file you open in your browser. Every field is editable in place, project progress updates with a button press, and a complete, consistently formatted report is ready to export as a PDF in minutes — with no software installation, no account, and no internet connection required.
+
+<Note>
+  The Site Brief runs entirely in your browser. No server, login, or internet connection is required after you open the file.
+</Note>
+
+## What the brief covers
+
+The brief is divided into seven numbered sections, each addressing a distinct operational domain.
+
+<CardGroup cols={2}>
+  <Card title="Projects" icon="chart-bar">
+    A dashboard of all active infrastructure projects, each showing a project name, current status, a visual progress bar, and a completion percentage you can adjust with **+** and **−** controls.
+  </Card>
+  <Card title="Gas Flow Rates" icon="gauge-high">
+    A register of all gas streams and delivery points, with editable flow rate values, unit fields, colour-coded status indicators (Normal / Monitor / Alert), remarks, and recorded dates.
+  </Card>
+  <Card title="Community" icon="users">
+    Department update cards covering Community Liaison forums, CSR activities such as tree planting programmes, and stakeholder engagement events including parliamentary visits.
+  </Card>
+  <Card title="Roads" icon="road">
+    Cards for active road construction works and routine maintenance, including contractor details, completion targets, and inspection records.
+  </Card>
+  <Card title="Pipeline" icon="pipe-section">
+    Integrity management status and anomaly watch cards covering survey results, KP location references, and resolution timelines.
+  </Card>
+  <Card title="Facilities" icon="building">
+    Updates on site facilities maintenance and accommodation and utilities status, including service disruption records and scheduled works.
+  </Card>
+  <Card title="Technical Services" icon="wrench">
+    Engineering, HSE, and Projects updates — covering open technical items, LTI-free day counts, emergency drill schedules, and procurement status for capital projects.
+  </Card>
+</CardGroup>
+
+## Key capabilities
+
+**In-browser editing**
+
+Every text field in the brief — project names, status labels, narrative paragraphs, lead officer names, dates, and remarks — is directly editable. Click any field and type. No forms, no modals, no save buttons between edits.
+
+**Interactive project progress cards**
+
+Each project card in Section 01 includes **+** and **−** buttons that adjust the completion percentage in 5-point steps. The progress bar colour updates automatically: red for early-stage work (below 30%), amber for mid-progress (30–59%), teal for advanced progress (60–99%), and green when a project reaches 100% completion.
+
+**Gas flow rate register with status indicators**
+
+The Section 02 table displays each gas stream with a colour-coded dot indicator — green for Normal, amber for Monitor, and red for Alert. Every cell in the table is editable, and the **Add Gas Stream** button at the bottom of the table appends a new blank row, allowing you to extend the register without touching any code.
+
+**Department update cards with badge statuses**
+
+Sections 03 through 07 use a card layout. Each card has an editable department name, a clickable status badge (Active, Ongoing, In Progress, Scheduled, Satisfactory, and so on), a narrative text body, and a metadata row with fields for lead officer, dates, and reference numbers.
+
+**Local storage persistence**
+
+Clicking **Save Progress** in the sticky action bar at the bottom of the page writes all project data, gas stream data, and editable field content to the browser's local storage. The next time you open the file in the same browser, that data is automatically restored.
+
+**Print and PDF export**
+
+Clicking **Print / Export PDF** opens the browser's native print dialog. The brief includes print-specific styles that hide the action bar and editing controls, set the background to white, and remove edit highlights — producing a clean, document-ready output when you choose "Save as PDF".
+
+## How the brief is structured
+
+The brief follows a fixed seven-section sequence, each prefixed with a large section number in the page layout:
+
+| # | Section | What it covers |
+|---|---------|---------------|
+| 01 | Projects | Infrastructure project progress across all active capital works |
+| 02 | Gas Flow Rates | Flow measurements, units, and status for every gas stream |
+| 03 | Community | Liaison forums, CSR programmes, and stakeholder visits |
+| 04 | Roads | Construction progress and routine road maintenance |
+| 05 | Pipeline | Integrity survey results and anomaly tracking |
+| 06 | Facilities | Site facilities maintenance and accommodation services |
+| 07 | Technical Services | Engineering, HSE, and capital projects updates |
+
+A navigation strip at the top of the page links directly to each section anchor, so you can jump to any part of the report without scrolling.

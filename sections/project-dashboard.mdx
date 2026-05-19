@@ -1,0 +1,62 @@
+---
+title: "Track infrastructure projects in the Site Brief"
+description: "The Project Progress Dashboard shows completion percentages for all active site projects. Adjust progress with +/− controls and read color-coded status bars."
+sidebarTitle: "Project Dashboard"
+---
+
+The Project Progress Dashboard (Section 01) gives you a real-time visual overview of all active infrastructure projects on site. Each project card shows the project name, current status label, a color-coded progress bar, and a completion percentage you can adjust directly in the browser.
+
+## Reading the dashboard
+
+Each project card is made up of four distinct parts:
+
+| Element | What it shows |
+|---|---|
+| **Project name** | The name of the infrastructure project. Click to edit. |
+| **Status label** | A short descriptor for the current state of the project, e.g. "In Progress" or "Completed". Click to edit. |
+| **Progress bar** | A horizontal bar that fills from left to right as the completion percentage increases. Color changes with the value (see table below). |
+| **Completion percentage** | The large number in the lower-left of the card. Reflects the current value and updates immediately when you use the controls. |
+
+### Progress bar color key
+
+| Color | Range | Meaning |
+|---|---|---|
+| Red | 0 – 29% | Early stage or stalled |
+| Amber | 30 – 59% | Active — midway through |
+| Teal | 60 – 99% | Well advanced |
+| Green | 100% | Complete |
+
+The **+** and **−** buttons in the lower-right of each card increment or decrement the completion percentage by 5 percentage points per click.
+
+## Pre-loaded projects
+
+The dashboard opens with the following ten infrastructure projects and their initial completion values:
+
+| Project | Initial Completion |
+|---|---|
+| Roads | 45% |
+| Gas Village | 30% |
+| Trauma Centre | 60% |
+| Trauma Centre Civil Works | 25% |
+| LPG Bottling Plant | 50% |
+| Teachers Quarters | 40% |
+| Gas Lodge | 70% |
+| GPP Gym | 55% |
+| Astroturf | 80% |
+| Esiama Market | 20% |
+
+All ten projects are set to "In Progress" at load time. You can update each status label independently to reflect actual field conditions.
+
+## Editing projects
+
+Every text element on a project card is editable directly in the browser:
+
+- **Project name** — click the name at the top of the card to place your cursor inside it and type your update.
+- **Status label** — click the status text (shown in a smaller monospace font beneath the name) to edit it.
+- **Completion percentage** — use the **+** button to increase the value by 5% or the **−** button to decrease it by 5%. The progress bar, percentage number, and their colors update immediately.
+
+When a project reaches 100%, the status label automatically changes to **Completed** and the bar turns green. You can continue to edit the label manually after this point if needed.
+
+<Note>
+Changes are stored in memory while the page is open. Click **Save Progress** in the action bar to persist your changes to local storage.
+</Note>

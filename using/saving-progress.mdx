@@ -1,0 +1,75 @@
+---
+title: "Save and restore your Site Brief between sessions"
+description: "Use Save Progress to store your edits in browser local storage. Learn how auto-restore works, what the limitations are, and how to clear saved data."
+sidebarTitle: "Saving Progress"
+---
+
+The Ghana Gas Site Brief stores your data in the browser's local storage using the **Save Progress** button. When you reopen the HTML file in the same browser on the same device, your previous data is automatically restored. This means you can build up a monthly report over multiple sessions without starting from scratch each time.
+
+## Saving your work
+
+<Steps>
+  <Step title="Complete your edits for the session">
+    Fill in or update any fields you want to capture before closing the browser or ending your session.
+  </Step>
+  <Step title="Click Save Progress">
+    Click the **Save Progress** button in the sticky action bar at the bottom of the page.
+  </Step>
+  <Step title="Confirm the save">
+    The button briefly shows **✓ Saved!** to confirm the save was successful, then returns to its normal label.
+  </Step>
+  <Step title="Verify your data is stored">
+    Your data is now stored in local storage under three keys: `sitebrief_projects`, `sitebrief_gas`, and `sitebrief_html`. These persist across browser sessions until you clear them.
+  </Step>
+</Steps>
+
+## What is saved
+
+Each save operation writes to three separate local storage keys:
+
+| Storage key | What it contains |
+|---|---|
+| `sitebrief_projects` | Project names, status labels, and completion percentages for all project cards |
+| `sitebrief_gas` | Gas stream names, flow rate values, units, remarks, and recorded dates for all rows in the gas flow table |
+| `sitebrief_html` | The inner HTML of all other editable fields — department card names, status badges, update body text, masthead fields, and all metadata values |
+
+## Auto-restore on page load
+
+When you open the HTML file, the brief automatically checks for saved data in local storage before the page renders. If saved data is found, it restores all three datasets — project data, gas stream data, and all editable fields — without any action required from you. If no saved data exists, the brief loads with its default content.
+
+## Limitations
+
+<Warning>
+Local storage is scoped to the browser, device, and file path. Your saved data will **not** be available if you:
+
+- Open the file in a different browser
+- Open the file on a different device
+- Clear your browser's site data or local storage
+- Move or rename the HTML file to a different path
+</Warning>
+
+Because local storage is tied to the origin of the file, moving the HTML file to a new folder or renaming it will cause the browser to treat it as a different origin, and previously saved data will not load.
+
+## Best practices
+
+<Tip>
+Save a PDF copy at the end of each editing session as a permanent, portable record. Use **Print / Export PDF** immediately after saving to local storage so your PDF reflects the latest saved state.
+</Tip>
+
+A recommended end-of-session workflow:
+
+1. Click **Save Progress** to write your changes to local storage
+2. Review all sections and replace any remaining placeholder text
+3. Click **Print / Export PDF** and save the PDF to a shared drive or document management system
+
+## Clearing saved data
+
+To discard your saved data and return the brief to its default content, you can remove the local storage keys using your browser's developer tools:
+
+1. Open developer tools by pressing **F12** (or **Fn + F12** on some keyboards)
+2. Go to the **Application** tab (Chrome/Edge) or **Storage** tab (Firefox)
+3. Expand **Local Storage** in the left panel and select the entry for the HTML file
+4. Find and delete the keys `sitebrief_projects`, `sitebrief_gas`, and `sitebrief_html`
+5. Reload the page — the brief will load with its default content
+
+Alternatively, use your browser's **Clear site data** or **Clear browsing data** feature and ensure local storage is included in the items to clear.

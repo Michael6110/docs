@@ -1,0 +1,60 @@
+---
+title: "Record gas flow rates across all streams and lines"
+description: "The Gas Flow Rate Register tracks MMscfd values for every gas stream on site. Edit flow rates and remarks inline, and monitor Normal/Monitor/Alert status."
+sidebarTitle: "Gas Flow Register"
+---
+
+The Gas Flow Rate Register (Section 02) tracks flow rates across the site's gas streams and delivery points. Values are measured in MMscfd (million standard cubic feet per day) unless a different unit is specified. Each row in the register shows the stream name, flow rate, unit, operational status, remarks, and the date recorded.
+
+## Register columns
+
+The table contains the following columns:
+
+| Column | Description |
+|---|---|
+| **#** | Row number, auto-assigned in sequence starting from 01. |
+| **Gas Stream / Line** | Name of the gas stream or pipeline section. Click to edit. |
+| **Flow Rate** | Numeric flow rate value. Click to edit. |
+| **Unit** | Unit of measurement — defaults to MMscfd. Click to edit if a stream uses a different unit. |
+| **Status** | Color-coded indicator reflecting the operational state of the stream. See [Status indicators](#status-indicators) below. |
+| **Remarks** | Free-text operational note for the stream, e.g. "Stable. Within design envelope." Click to edit. |
+| **Recorded** | Date of the measurement reading. Click to edit. |
+
+## Pre-loaded streams
+
+The register opens with the following ten gas streams:
+
+| Stream | Flow Rate | Status |
+|---|---|---|
+| Inlet Gas Feed — GPP | 120.5 MMscfd | Normal |
+| Rich Gas Export — Train 1 | 42.8 MMscfd | Normal |
+| Rich Gas Export — Train 2 | 39.1 MMscfd | Normal |
+| Lean Gas — WAGP Delivery Point | 78.4 MMscfd | Monitor |
+| LPG Stream — Splitter | 8.20 MMscfd | Normal |
+| Fuel Gas — Site Consumption | 3.50 MMscfd | Normal |
+| Flare Header | 0.80 MMscfd | Monitor |
+| Gas Condensate — Recovery | 2.10 MMscfd | Normal |
+| Custody Transfer — Takoradi | 55.0 MMscfd | Normal |
+| Emergency Bypass Line | 0.00 MMscfd | Normal |
+
+All pre-loaded entries carry an initial recorded date of Apr 17.
+
+## Editing values
+
+Click any cell in the **Flow Rate**, **Unit**, **Gas Stream / Line**, **Remarks**, or **Recorded** columns to edit the value inline. The change takes effect immediately in the browser.
+
+To add a new stream to the register, click **+ Add Gas Stream** at the bottom of the table. A new row is appended with the default name "New Gas Stream", a flow rate of 0.00 MMscfd, and a green Normal status. You can then click each cell in the new row to fill in the correct values.
+
+## Status indicators
+
+Each row carries a colored dot and label to indicate the operational state of that stream:
+
+| Indicator | Color | Meaning |
+|---|---|---|
+| **Normal** | Green | The stream is operating within expected parameters. No action required. |
+| **Monitor** | Amber | The stream shows a deviation or is under active review. Keep watch and document observations in the Remarks column. |
+| **Alert** | Red | The stream has exceeded acceptable limits or requires immediate attention. Escalate as per site procedures. |
+
+<Warning>
+Status indicators are set in the source code and reflect the initial data. If you need to change a stream's status (e.g., from Monitor to Normal), you must edit the HTML source directly — status cannot currently be changed through the browser UI.
+</Warning>
